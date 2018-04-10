@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/item_root"
+    android:layout_height="90dp">
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/item_place"
+        app:layout_constraintLeft_toRightOf="@+id/item_img"
+        app:layout_constraintTop_toTopOf="@+id/item_img"
+        tools:text="111111" />
+
+    <TextView
+        android:id="@+id/item_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="占位符占位符占位符占位符"
+        app:layout_constraintBottom_toBottomOf="@+id/item_img"
+        app:layout_constraintLeft_toLeftOf="@+id/item_text"
+        app:layout_constraintTop_toBottomOf="@+id/item_text" />
+
+</android.support.constraint.ConstraintLayout>
